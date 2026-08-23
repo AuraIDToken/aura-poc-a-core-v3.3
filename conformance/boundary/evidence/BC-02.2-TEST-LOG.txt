@@ -1,0 +1,38 @@
+$ python3 -m unittest conformance.boundary.test_ri_py_receiver -v
+test_aliased_adapter_identity_fails_r_val_008 (conformance.boundary.test_ri_py_receiver.ConstructionRobustness.test_aliased_adapter_identity_fails_r_val_008) ... ok
+test_construction_artifacts_contain_no_p01_material (conformance.boundary.test_ri_py_receiver.ConstructionRobustness.test_construction_artifacts_contain_no_p01_material)
+The tokens below are a denylist, not construction material. ... ok
+test_construction_material_is_synthetic (conformance.boundary.test_ri_py_receiver.ConstructionRobustness.test_construction_material_is_synthetic) ... ok
+test_forbidden_handoff_value_fails_r_val_003 (conformance.boundary.test_ri_py_receiver.ConstructionRobustness.test_forbidden_handoff_value_fails_r_val_003) ... ok
+test_invalid_handoff_status_is_rejected (conformance.boundary.test_ri_py_receiver.ConstructionRobustness.test_invalid_handoff_status_is_rejected) ... ok
+test_malformed_receipt_fails_the_matching_assertion (conformance.boundary.test_ri_py_receiver.ConstructionRobustness.test_malformed_receipt_fails_the_matching_assertion) ... ok
+test_missing_fixture_identity_is_rejected (conformance.boundary.test_ri_py_receiver.ConstructionRobustness.test_missing_fixture_identity_is_rejected) ... ok
+test_missing_handoff_method_is_rejected (conformance.boundary.test_ri_py_receiver.ConstructionRobustness.test_missing_handoff_method_is_rejected) ... ok
+test_missing_provenance_is_rejected (conformance.boundary.test_ri_py_receiver.ConstructionRobustness.test_missing_provenance_is_rejected) ... ok
+test_reconstructed_raw_material_fails_r_val_010 (conformance.boundary.test_ri_py_receiver.ConstructionRobustness.test_reconstructed_raw_material_fails_r_val_010) ... ok
+test_base64_text_is_rejected_as_digest_input (conformance.boundary.test_ri_py_receiver.OctetIntake.test_base64_text_is_rejected_as_digest_input) ... ok
+test_bytearray_and_memoryview_are_normalized_to_bytes (conformance.boundary.test_ri_py_receiver.OctetIntake.test_bytearray_and_memoryview_are_normalized_to_bytes) ... ok
+test_digest_matches_independent_recomputation (conformance.boundary.test_ri_py_receiver.OctetIntake.test_digest_matches_independent_recomputation) ... ok
+test_empty_octets_are_a_valid_observation (conformance.boundary.test_ri_py_receiver.OctetIntake.test_empty_octets_are_a_valid_observation) ... ok
+test_hex_text_is_rejected_as_digest_input (conformance.boundary.test_ri_py_receiver.OctetIntake.test_hex_text_is_rejected_as_digest_input) ... ok
+test_mutating_the_source_buffer_does_not_alter_the_receipt (conformance.boundary.test_ri_py_receiver.OctetIntake.test_mutating_the_source_buffer_does_not_alter_the_receipt) ... ok
+test_receive_exposes_no_digest_parameter (conformance.boundary.test_ri_py_receiver.OctetIntake.test_receive_exposes_no_digest_parameter) ... ok
+test_text_input_is_rejected (conformance.boundary.test_ri_py_receiver.OctetIntake.test_text_input_is_rejected) ... ok
+test_every_assertion_is_reported (conformance.boundary.test_ri_py_receiver.RValAssertions.test_every_assertion_is_reported) ... ok
+test_r_val_001_schema_identity (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_001_schema_identity) ... ok
+test_r_val_002_fixture_identity (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_002_fixture_identity) ... ok
+test_r_val_003_closed_handoff_domain (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_003_closed_handoff_domain) ... ok
+test_r_val_004_length_explicit (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_004_length_explicit) ... ok
+test_r_val_005_digest_is_receiver_derived (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_005_digest_is_receiver_derived) ... ok
+test_r_val_006_receiver_identity (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_006_receiver_identity) ... ok
+test_r_val_007_implementation_identity (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_007_implementation_identity) ... ok
+test_r_val_008_adapter_identity (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_008_adapter_identity) ... ok
+test_r_val_009_environment_identity (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_009_environment_identity) ... ok
+test_r_val_010_raw_material_preserved (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_010_raw_material_preserved) ... ok
+test_r_val_011_deterministic_serialization (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_011_deterministic_serialization) ... ok
+test_r_val_012_no_conformance_authority (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_012_no_conformance_authority) ... ok
+
+----------------------------------------------------------------------
+Ran 31 tests in 0.005s
+
+OK
