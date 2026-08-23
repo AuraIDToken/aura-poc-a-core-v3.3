@@ -1,0 +1,39 @@
+{
+  "files": {
+    "conformance/boundary/BC-02.2-RI-PY-RECEIVER-v1.md": {
+      "octet_length": 6262,
+      "sha256": "1611de40ea7e3f062acf26441c46ba2418e1bfc0fc7898fa37d2cc3cacedcc0c"
+    },
+    "conformance/boundary/evidence/BC-02.2-CONSTRUCTION-EVIDENCE.md": {
+      "octet_length": 8323,
+      "sha256": "1fa0fb2f446f4b2fcc9e98c388476f063bc4a4a8d62bdf7a3ab29741e9d071ec"
+    },
+    "conformance/boundary/evidence/BC-02.2-CONSTRUCTION-TIMESTAMP.txt": {
+      "octet_length": 45,
+      "sha256": "9630e3f46059355eeaa4908fd92181c5e9e6c464c7a15277640e205ee4f5250a"
+    },
+    "conformance/boundary/evidence/BC-02.2-RVAL-REPORT.txt": {
+      "octet_length": 3590,
+      "sha256": "b7f501f46dadc3c2451626e10768c18d2074b95dcaeb07181d40760fca865af0"
+    },
+    "conformance/boundary/evidence/BC-02.2-TEST-LOG.txt": {
+      "octet_length": 4826,
+      "sha256": "f0b765723112dd19737c6057d3cc0bb2aec8c4cc220a60d2a471834e31970e45"
+    },
+    "conformance/boundary/ri_py_adapter.py": {
+      "octet_length": 5711,
+      "sha256": "1cdfca21fad7c5f37ca02991c7e5cab92ab7b87318ba183bd6243299d35ff3ef"
+    },
+    "conformance/boundary/ri_py_receiver.py": {
+      "octet_length": 19406,
+      "sha256": "89825839e09cc06fb0db797acdf5a2bb1fce057e30bd36b36749659330e57e0c"
+    },
+    "conformance/boundary/test_ri_py_receiver.py": {
+      "octet_length": 13875,
+      "sha256": "2c216d46a7418124204739b1490cd2035ccc3d40a805c4f07ce7eb37feb8bb94"
+    }
+  },
+  "manifest_id": "BC-02.2-CONSTRUCTION-EVIDENCE-MANIFEST",
+  "manifest_version": 2,
+  "scope": "BC-02.2 RI-PY Receiver v1 construction, after the authorized source_commit provenance correction. Evidence only; no conformance result; P-01 not executed."
+}

@@ -1,0 +1,37 @@
+== BC-02.2 construction validation (synthetic material, NOT P-01) ==
+synthetic_octet_length : 43
+synthetic_octets_hex   : 42432d30322e322073796e74686574696320636f6e737472756374696f6e206d6174657269616c2000feff
+independent_sha256     : de2c1a21f4518514d8f172245ae83f3bea3f4841c15a6bc62b50bcd0678a2981
+receiver_derived_sha256: de2c1a21f4518514d8f172245ae83f3bea3f4841c15a6bc62b50bcd0678a2981
+receive() digest param : False
+
+== R-VAL-001..012 (schema/receipt validation only) ==
+R-VAL-001  PASS  schema identity/version present - schema_id='BC-02.1-COMMON-RECEIPT' schema_version=1
+R-VAL-002  PASS  fixture identity fields present - fixture_id='FIX-SYNTHETIC-BC022' fixture_artifact_identity='FIX-SYNTHETIC-BC022.construction.bin'
+R-VAL-003  PASS  handoff state belongs to closed domain - status='TRANSFERRED' method='in-memory-octet-transfer' domain=['ERROR', 'NOT_TRANSFERRED', 'TRANSFERRED']
+R-VAL-004  PASS  received length is explicit - octet_length=43 len(raw_octets)=43
+R-VAL-005  PASS  recomputed hash is explicitly receiver-derived - recorded='de2c1a21f4518514d8f172245ae83f3bea3f4841c15a6bc62b50bcd0678a2981' independent_recompute='de2c1a21f4518514d8f172245ae83f3bea3f4841c15a6bc62b50bcd0678a2981' receive_accepts_digest_parameter=False
+R-VAL-006  PASS  receiver identity preserved - receiver_id='RI-PY' language='Python'
+R-VAL-007  PASS  implementation identity preserved - implementation_id='aura-ri-py' implementation_version='1.0.0' source_commit='d943807c359af982fd573ec4ff690b7fa265dc42' distinct_from_receiver_id=True
+R-VAL-008  PASS  adapter identity preserved - adapter_id='BC-02.2-RI-PY-BOUNDARY-ADAPTER' adapter_version='1.0.0' distinct_from_implementation_and_receiver=True
+R-VAL-009  PASS  environment identity preserved - environment_id='bc022-construction-linux-x86_64-cpython-3.11.15' platform='Linux-x86_64-6.18.44-fc-v21' runtime='CPython 3.11.15'
+R-VAL-010  PASS  raw material is not silently reconstructed - raw_octets_type=bytes transport_encoding=base64 reversible=True
+R-VAL-011  PASS  deterministic serialization is possible - stable_repeat=True lexicographic_keys=True null_free=True compact=True octets=852
+R-VAL-012  PASS  schema contains no conformance-result authority - forbidden_keys=[] forbidden_values=[] field_set_exact=True
+
+== Deterministic serialization ==
+repeat_serialization_identical : True
+serialized_octets              : 852
+serialization_sha256           : 9258d7d794c91d6ff584b63a8c05617b8fb5a81305f229f9eead127850715b25
+top_level_keys_lexicographic   : True
+base64_transport_reversible    : True
+
+== BC-02.1 receipt (deterministic transport form, synthetic) ==
+{"adapter":{"adapter_id":"BC-02.2-RI-PY-BOUNDARY-ADAPTER","adapter_version":"1.0.0"},"environment":{"environment_id":"bc022-construction-linux-x86_64-cpython-3.11.15","platform":"Linux-x86_64-6.18.44-fc-v21","runtime":"CPython 3.11.15"},"fixture":{"fixture_artifact_identity":"FIX-SYNTHETIC-BC022.construction.bin","fixture_id":"FIX-SYNTHETIC-BC022"},"handoff":{"method":"in-memory-octet-transfer","status":"TRANSFERRED"},"received":{"octet_length":43,"raw_octets":"QkMtMDIuMiBzeW50aGV0aWMgY29uc3RydWN0aW9uIG1hdGVyaWFsIAD+/w==","recomputed_sha256":"de2c1a21f4518514d8f172245ae83f3bea3f4841c15a6bc62b50bcd0678a2981"},"receiver":{"implementation_id":"aura-ri-py","implementation_version":"1.0.0","language":"Python","receiver_id":"RI-PY","source_commit":"d943807c359af982fd573ec4ff690b7fa265dc42"},"schema_id":"BC-02.1-COMMON-RECEIPT","schema_version":1}
+
+all_assertions_passed : True
+
+P-01 NOT EXECUTED
+B-VAL-014 NOT EXECUTED
+CONF-003 section 4.5 NO RESULT
+CONFORMANCE BLOCKED
