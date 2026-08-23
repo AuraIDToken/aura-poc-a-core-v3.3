@@ -33,6 +33,6 @@ test_r_val_011_deterministic_serialization (conformance.boundary.test_ri_py_rece
 test_r_val_012_no_conformance_authority (conformance.boundary.test_ri_py_receiver.RValAssertions.test_r_val_012_no_conformance_authority) ... ok
 
 ----------------------------------------------------------------------
-Ran 31 tests in 0.005s
+Ran 31 tests in 0.006s
 
 OK
